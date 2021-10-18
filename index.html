@@ -11,8 +11,8 @@
 
 <body>
     <section class="header">
-        <nav class="d-flex">
-            <ul class="d-flex">
+        <nav class="display-flex">
+            <ul class="display-flex">
                 <li class="logo">
                     <img src="img/logo.svg" alt="">
                 </li>
@@ -36,25 +36,25 @@
     <section class="transacao">
         <p class="novaTransacao">Nova Transação</p>
         <form action="" class="transacaoForm">
-            <div class="d-flex tipodetransacao">
-                <label class="formularioLabel label" for="acaoMercadoria d-flex">Tipo de Transação</label>
+            <div class="display-flex tipodetransacao">
+                <label class="formularioLabel label" for="acaoMercadoria display-flex">Tipo de Transação</label>
                 <select class="selectInput acaoMercadoria" name="acaoMercadoria" form="acaoMercadoria">
                     <option value="comprar">Compra</option>
                     <option value="vender">Venda</option>
                 </select>
             </div>
 
-            <div class="d-flex mercadoria">
-                <label class="formularioLabel label" for="nomeMercadoria d-flex">Nome da Mercadoria</label>
-                <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Input">
+            <div class="display-flex mercadoria">
+                <label class="formularioLabel label" for="nomeMercadoria display-flex">Nome da Mercadoria</label>
+                <input type="text" required name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Input" >
             </div>
 
-            <div class="d-flex valor">
-                <label class="formularioLabel label" for="valorInput d-flex">Valor</label>
-                <input type="text" name="valorInput" class="textInput valorInput" placeholder="R$ 0,00">
+            <div class="display-flex valor">
+                <label class="formularioLabel label" for="valorInput display-flex">Valor</label>
+                <input type="number" required name="valorInput" class="textInput valorInput" placeholder="R$ 0,00" >
             </div>
 
-            <div class="d-flex botao">
+            <div class="display-flex botao">
                 <input class="btnSubmit" type="button" value="Adicionar Transação">
             </div>
 
@@ -65,38 +65,38 @@
 
     <section class="extrato">
 
-        <h1 class="d-flex titulo">Extrato de Transações</h1>
-        <div class="d-flex tabelaColunas">
+        <h1 class="display-flex titulo">Extrato de Transações</h1>
+        <div class="display-flex tabelaColunas">
             <p class="textoTabela colunaMercadoria">Mercadoria</p>
             <p class="textoTabela colunaValor">Valor</p>
         </div>
 
-        <div class="d-flex tabelaLinha">
-            <div class="linha d-flex">
+        <div class="display-flex tabelaLinha">
+            <div class="linha display-flex">
                 <p class="acaoTransacao">+</p>
                 <p class="textoTabela linhaMercadoria">Lorem ipsum dolor sit amet consectetur</p>
                 <p class="textoTabela linhaValor">R$ 12.999,99</p>
             </div>
         </div>
 
-        <div class="d-flex tabelaLinha">
-            <div class="linha d-flex">
+        <div class="display-flex tabelaLinha">
+            <div class="linha display-flex">
                 <p class="acaoTransacao">-</p>
                 <p class="textoTabela linhaMercadoria">Quis nostrud exercitation</p>
                 <p class="textoTabela linhaValor">R$ 99,99</p>
             </div>
         </div>
 
-        <div class="d-flex tabelaLinha">
-            <div class="linha d-flex">
+        <div class="display-flex tabelaLinha">
+            <div class="linha display-flex">
                 <p class="acaoTransacao">+</p>
                 <p class="textoTabela linhaMercadoria">Lorem ipsum </p>
                 <p class="textoTabela linhaValor">R$ 9,99</p>
             </div>
         </div>
 
-        <div class="d-flex tabelaLinhaTotal">
-            <div class="linha d-flex">
+        <div class="display-flex tabelaLinhaTotal">
+            <div class="linha display-flex">
                 <p class="textoTabela linhaTotal">Total</p>
                 <div class="total">
                     <p class="textoTabela linhaTotalValor">
